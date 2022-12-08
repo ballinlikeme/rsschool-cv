@@ -60,5 +60,16 @@ Note list with highlighting of tags and ability to search for notes by tags. [Li
 * English - B2 (according to the EPAM test)
 * Chinese - A1
 
+## Code Example from CodeWars
 
+### Task
+Write a function that takes an integer as input, and returns the number of bits that are equal to one in the binary representation of that number. You can guarantee that input is non-negative.
+
+### Solution
+
+```
+var countBits = function(n) {
+  return n.toString(2).match(/1/g) === null ? 0 : n.toString(2).match(/1/g).length;
+};
+```
 

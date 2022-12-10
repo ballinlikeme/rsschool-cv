@@ -33,7 +33,7 @@ input:focus {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 h2 {
@@ -62,9 +62,47 @@ body {
   background-color: var(--bg-color);
   font-family: var(--font-family);
   font-size: var(--font-size);
+  color: #fff;
+  padding: 20px;
 }
 
 .wrapper {
   min-height: 100vh;
   overflow: hidden;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.page > * {
+  padding: 40px 10px;
+}
+.page__aside {
+  background-color: var(--accent-color);
+}
+.page__content {
+  background-color: var(--assist-bg-color);
+}
+.page__header {
+}
+.page__main {
+}
+
+.header {
+}
+.header__title {
+  letter-spacing: 0.05em;
+}
+.header__subtitle {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.header__text-block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
 }

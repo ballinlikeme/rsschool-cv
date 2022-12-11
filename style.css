@@ -118,8 +118,6 @@ body {
   margin-top: 40px;
 }
 
-.section {}
-
 .section__title {
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -141,7 +139,6 @@ body {
   gap: 30px;
 }
 
-.section__item {}
 
 .item {
   margin-top: 20px;
@@ -267,4 +264,46 @@ ul {
 
 aside>.main__section:not(:last-child) {
   margin-bottom: 20px;
+}
+
+.footer {
+  background-color: var(--assist-bg-color);
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+}
+
+.footer__wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+
+.footer__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__icon {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__icon a {
+  width: 100%;
+}
+
+.footer__text {
+  font-weight: 600;
+}
+
+.footer__icon img {
+  max-width: 100%;
 }

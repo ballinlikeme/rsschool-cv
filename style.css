@@ -10,7 +10,7 @@ li {
 
 a,
 a:visited {
-  color: #000;
+  color: inherit;
   text-decoration: none;
 }
 
@@ -146,6 +146,11 @@ body {
 .item__text {
   margin-bottom: 10px;
 }
+
+.item__text a {
+  color: lightblue;
+}
+
 .item__list {
   margin-left: 10px;
 }

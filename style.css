@@ -75,32 +75,38 @@ body {
 }
 
 .page {
-  display: flex;
+  display: grid;
+  grid-template-columns: 35% 65%;
   justify-content: center;
   height: 100%;
   width: 100%;
 }
-.page > * {
+
+.page>* {
   padding: 40px;
 }
+
 .page__aside {
   background-color: var(--accent-color);
 }
+
 .page__content {
   background-color: var(--assist-bg-color);
 }
 
-.page__main > *:not(:last-child) {
+.page__main>*:not(:last-child) {
   margin-bottom: 30px;
 }
 
 .header__title {
   letter-spacing: 0.05em;
 }
+
 .header__subtitle {
   font-weight: 600;
   font-size: 1.5rem;
 }
+
 .header__text-block {
   display: flex;
   flex-direction: column;
@@ -111,10 +117,9 @@ body {
 .main {
   margin-top: 40px;
 }
-.main__section {
-}
-.section {
-}
+
+.section {}
+
 .section__title {
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -130,23 +135,28 @@ body {
   width: 100%;
   height: 1px;
 }
+
 .section__items {
   display: flex;
   gap: 30px;
 }
-.section__item {
-}
+
+.section__item {}
+
 .item {
   margin-top: 20px;
 }
+
 .item__title {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
+
 .item__sub-title {
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
+
 .item__text {
   margin-bottom: 10px;
 }
@@ -158,12 +168,15 @@ body {
 .item__list {
   margin-left: 10px;
 }
-.item__list > li {
+
+.item__list>li {
   margin-left: 10px;
 }
-.item__list > li > ul {
+
+.item__list>li>ul {
   margin-left: 20px;
 }
+
 .item__list li {
   list-style: circle;
 }
@@ -174,4 +187,84 @@ body {
   border-radius: 10px;
   box-shadow: 0px 2px 8px 0px rgba(34, 60, 80, 0.2);
   background-color: #383838;
+}
+
+.aside__image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.aside__image img {
+  max-width: 200px;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: white;
+}
+
+.contacts-list>li:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.skills>li,
+ul {
+  list-style: none;
+  width: 100%;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.skills {
+  margin-left: 0;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.progress {
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  height: 5px;
+  margin-top: 5px;
+}
+
+.progress::after {
+  content: '';
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #383838;
+}
+
+.html::after {
+  width: 90%;
+}
+
+.js::after {
+  width: 90%;
+}
+
+.react::after {
+  width: 80%;
+}
+
+.ex::after {
+  width: 50%;
+}
+
+.pg::after {
+  width: 50%;
+}
+
+.items-skills {
+  display: block;
+}
+
+aside>.main__section:not(:last-child) {
+  margin-bottom: 20px;
 }

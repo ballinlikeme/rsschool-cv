@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+input {
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+:root {
+  --font-family: "Calibri";
+  --assist-font-family: "Montserrat", sans-serif;
+  --font-size: 1rem;
+
+  --bg-color: #222;
+  --assist-bg-color: #4f4f4f;
+
+  --accent-color: #4169e1;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+[class*="container"] {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  color: #fff;
+  padding: 20px;
+}
+
+.wrapper {
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.page {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.page>* {
+  padding: 40px;
+}
+
+.page__aside {
+  background-color: var(--accent-color);
+}
+
+.page__content {
+  background-color: var(--assist-bg-color);
+}
+
+.page__main>*:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.header__title {
+  letter-spacing: 0.05em;
+}
+
+.header__subtitle {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.header__text-block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.main {
+  margin-top: 40px;
+}
+
+.section__title {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  position: relative;
+}
+
+.section__title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  background-color: #fff;
+  width: 100%;
+  height: 1px;
+}
+
+.section__items {
+  display: flex;
+  gap: 30px;
+}
+
+
+.item {
+  margin-top: 20px;
+}
+
+.item__title {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.item__sub-title {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.item__text {
+  margin-bottom: 10px;
+}
+
+.item__text a {
+  color: lightblue;
+}
+
+.item__list {
+  margin-left: 10px;
+}
+
+.item__list>li {
+  margin-left: 10px;
+}
+
+.item__list>li>ul {
+  margin-left: 20px;
+}
+
+.item__list li {
+  list-style: circle;
+}
+
+.item__code {
+  display: block;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px 0px rgba(34, 60, 80, 0.2);
+  background-color: #383838;
+}
+
+.aside__image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.aside__image img {
+  max-width: 200px;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: white;
+}
+
+.contacts-list>li:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.skills>li,
+ul {
+  list-style: none;
+  width: 100%;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.skills {
+  margin-left: 0;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.progress {
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  height: 5px;
+  margin-top: 5px;
+}
+
+.progress::after {
+  content: '';
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #383838;
+}
+
+.html::after {
+  width: 90%;
+}
+
+.js::after {
+  width: 90%;
+}
+
+.react::after {
+  width: 80%;
+}
+
+.ex::after {
+  width: 50%;
+}
+
+.pg::after {
+  width: 50%;
+}
+
+.items-skills {
+  display: block;
+}
+
+aside>.main__section:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.footer {
+  background-color: var(--assist-bg-color);
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+}
+
+.footer__wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+
+.footer__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__icon {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__icon a {
+  width: 100%;
+}
+
+.footer__text {
+  font-weight: 600;
+}
+
+.footer__icon img {
+  max-width: 100%;
+}

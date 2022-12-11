@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -24,6 +26,7 @@ input:focus {
 
 :root {
   --font-family: "Calibri";
+  --assist-font-family: "Montserrat", sans-serif;
   --font-size: 1rem;
 
   --bg-color: #222;
@@ -87,7 +90,8 @@ body {
   background-color: var(--assist-bg-color);
 }
 
-.page__main {
+.page__main > *:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .header__title {
@@ -162,4 +166,12 @@ body {
 }
 .item__list li {
   list-style: circle;
+}
+
+.item__code {
+  display: block;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px 0px rgba(34, 60, 80, 0.2);
+  background-color: #383838;
 }
